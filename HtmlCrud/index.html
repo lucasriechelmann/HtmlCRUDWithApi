@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD - Index</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <h1 class="container">People</h1>
+    </header>
+    <div class="container">
+        
+        <div id="pnlMessage" class="w-100">
+
+        </div>        
+        <div id="pnlIndex" class="w-100">
+            <button type="button" onclick="add(this)" class="btn btn-add mb-1">Add</button>
+            <table class="w-100 table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Date Of Birth</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="tblPeople">
+
+                </tbody>
+            </table>
+        </div>
+        <div id="pnlForm" class="w-100">
+            <form id="form" class="w-100 d-flex">
+                <input type="hidden" name="id" id="id">
+                <div class="w-33 form-group">                    
+                    <label for="first_name" class="form-label">First Name:</label>
+                    <input type="text" name="first_name" id="first_name" class="form-control">
+                </div>
+                <div class="w-33 form-group">                                        
+                    <label for="last_name" class="form-label">Last Name:</label>
+                    <input type="text" name="last_name" id="last_name" class="form-control">
+                </div>
+                <div class="w-33 form-group">
+                    <label for="date_of_birth" class="form-label">Date Of Birth:</label>
+                    <input type="date" name="date_of_birth" id="date_of_birth" class="form-control">
+                </div>                
+                <div class="w-100 d-flex mt-1">
+                    <button type="submit" class="btn btn-add" onclick="save(event)">Salvar</button>
+                    <button type="button" class="btn ms-1" onclick="cancel(this)">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/table-utils.js"></script>
+    <script src="js/people-repository.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

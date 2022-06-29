@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.header{
+    background-color: #2986cc;
+    color: white;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.w-10{
+    width: 10%;
+}
+
+.w-33{
+    width: 33%;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.p-05{
+    padding: 0.5rem;
+}
+
+.no-display{
+    display: none;
+}
+
+.table{
+    border-collapse: collapse;
+
+}
+
+.table td{
+    border: 1px solid #2986cc;
+}
+
+.table thead tr{
+    background-color: #2986cc;
+    color: white;
+}
+
+.table th, .table td{
+    text-align: center;
+    padding: 0.4rem;
+}
+
+.btn{
+    padding: 0.5rem 1rem;
+    border: 1px solid black;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    background-color: #eee;
+}
+
+.btn-add{
+    color: #fff;
+    background-color: #2986cc;
+    border: 1px solid #1c5d8e;
+}
+
+.btn-add:hover{
+    background-color: #1c5d8e;
+}
+
+.btn-edit{
+    color: #fff;
+    background-color: #345b4d;
+    border: 1px solid #243f35;
+}
+
+.btn-edit:hover{
+    background-color: #243f35;
+}
+
+.btn-delete{
+    color: #fff;
+    background-color: #ff3300;
+    border: 1px solid #b22300;
+}
+
+.btn-delete:hover{
+    background-color: #b22300;
+}
+
+.mt-1{
+    margin-top: 1rem;
+}
+
+.mb-1{
+    margin-bottom: 1rem;
+}
+
+.ms-1{
+    margin-left: 1rem;
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.form-group{
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+}
+
+.form-label{
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+    font-size: 1.2rem;
+}
+
+.form-control{
+    padding: 0.5rem;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
